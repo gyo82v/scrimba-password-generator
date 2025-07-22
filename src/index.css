@@ -22,7 +22,7 @@
 
   /* Apply custom styles to html, body, and the root element */
   html, body, #root {
-    @apply min-h-screen m-0 p-0;
+    @apply min-h-screen m-0 p-0 bg-neutral-900;
     line-height: 1.5;
     font-weight: 400;
     scroll-behavior: smooth;
@@ -54,6 +54,9 @@
   }
   .shadow-all {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .shadow-all-stone {
+    box-shadow: 0 0 10px rgba(156, 163, 175, 0.3);
   }
 
 }
