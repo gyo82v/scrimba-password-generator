@@ -51,22 +51,22 @@ function App() {
   }
   
   return (
-    <div className={mainStl}>
-      <div>
+    <main className={mainStl}>
+      <section>
         <h1 className={title1Stl}>Generate a</h1>
-        <h1 className={title2Stl}>random passord</h1>
+        <h2 className={title2Stl}>random passord</h2>
         <p className={descStl}>Never use an insecure password again.</p>
-      </div>
+      </section>
       <button onClick={handlePssw} className={btnStl}>Generate password</button>
-      <div className={psswSecStl}>
+      <section className={psswSecStl}>
         <p className={psswStl} onClick={() => handleCopy("password1", password1)}>
           {copied === "password1" ? "✓ Copied!" : password1}
         </p>
         <p className={psswStl} onClick={() => handleCopy("password2", password2)}>
           {copied === "password2" ? "✓ Copied!" : password2}
         </p>
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
 
